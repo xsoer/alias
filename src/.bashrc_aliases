@@ -10,10 +10,35 @@ alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
 alias _='sudo '
+
 alias afind='ack -il'
-alias c=cargo
 alias egrep='egrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
+alias history=omz_history
+alias l='ls -lah'
+alias la='ls -lAh'
+alias ll='ls -lh'
+alias ls='ls -G'
+alias lsa='ls -lah'
+
+alias dco='docker-compose'
+alias dcb='docker-compose build'
+alias dce='docker-compose exec'
+alias dcps='docker-compose ps'
+alias dcrestart='docker-compose restart'
+alias dcrm='docker-compose rm'
+alias dcr='docker-compose run'
+alias dcstop='docker-compose stop'
+alias dcup='docker-compose up'
+alias dcupb='docker-compose up --build'
+alias dcupd='docker-compose up -d'
+alias dcdn='docker-compose down'
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dcpull='docker-compose pull'
+alias dcstart='docker-compose start'
+alias dck='docker-compose kill'
+
 alias g=git
 alias ga='git add'
 alias gaa='git add --all'
@@ -181,12 +206,15 @@ alias gupav='git pull --rebase --autostash -v'
 alias gupv='git pull --rebase -v'
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
-alias history=omz_history
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -lh'
-alias ls='ls -G'
-alias lsa='ls -lah'
+
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
+
+alias c=cargo
 alias md='mkdir -p'
 alias p=python3
 alias pp=pip3
