@@ -3,5 +3,5 @@
 提供跨平台一键安装别名
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/xsoer/alias/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/xsoer/alias/master/src/install.sh)"
 ```
